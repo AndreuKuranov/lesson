@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	color: #000;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.btn {
+	margin: 10px;
+	border: 2px solid red;
+}
+
+.lesson__form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 500px;
+	margin: 30px;
+	padding: 20px;
+	border: 4px solid red;
+	border-radius: 5px;
+}
+.lesson__item {
+	display: flex;
+	margin: 10px;
+	position: relative;
+}
+.lesson__label {
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	transition: 0.5s;
+}
+.lesson__label--top {
+	top: 10px;
+}
+.lesson__label--error {
+	color: red;
+}
+.lesson__label--ok {
+	color: rgb(10, 173, 10);
+}
+.lesson__input {
+	flex: 1 1 100%;
+	margin: 30px 0 0 0;
+	padding: 10px;
+	border: 2px solid #000;
+	border-radius: 5px;
+}
+.lesson__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.lesson__button {
+	margin: 10px 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 2.4rem;
+	text-transform: uppercase;
+	border-radius: 1.85rem;
+	font-size: 0.8rem;
+	font-weight: 700;
+	line-height: 150%;
+	border: 2px solid #EF3120;
+	color: #EF3120;
+	padding: 0.25rem 1rem;
+	transition: 0.5s ease-out;
+}
+.lesson__close {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.lesson__modal {
+	display: none;
+	position: fixed;
+	top: 10%;
+	left: calc(50% - 200px);
+	z-index: 1000;
+	min-width: 400px;
+	min-height: 300px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+.lesson__modal--button {
+	display: flex;
+	justify-content: end;
+}
+
+.lesson__modal--display {
+	display: block;
+}
